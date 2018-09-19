@@ -8,3 +8,9 @@ into your web browser.
 This is the source tree from Oracle with the following patches applied (which can be found in the root of the repository):
 
  * `db-atomic.patch` - rename `__atomic_compare_exchange` function to avoid conflicting with builtin in Clang
+
+Changelog
+=========
+- September 19, 2018:
+  Compile with clang on macOS was not possible. Used the bitcoin core script https://github.com/bitcoin/bitcoin/blob/master/contrib/install_db4.sh
+  to create a new working Berkeley DB build. Only the changed patched sources files and the patch itself was updated in Spectrecoin repo.
